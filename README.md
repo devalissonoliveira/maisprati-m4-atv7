@@ -6,6 +6,7 @@
 - Abra o terminal no Visual Studio Code.
 - Execute o comando no terminal **npm install** para instalar todas as dependências.
 - Execute o comando no terminal **npm run dev** para iniciar o ambiente de desenvolvimento, como uma aplicação em modo de desenvolvimento.
+- Abra o navegador e digite o link que aparece no seu terminal após o nome "Local:", ou clique com o botão esquerdo do mouse enquanto segura a tecla Ctrl para visualizar no seu navegador a aplicação React rodando.
 
 ## Tecnologias utilizadas
 <p>
