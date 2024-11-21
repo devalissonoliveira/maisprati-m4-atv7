@@ -2,128 +2,119 @@ import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <>
-        <nav className="h-full w-2/12">
+    <aside className="w-52">
+        <nav className="h-full">
             <ul className="grid grid-cols-1 h-lvh bg-neutral-100">
                 <li 
                   >
                   <NavLink to="/" 
-                            className="
-                              flex items-center 
-                              justify-center
-                              text-stone-500 
-                              hover:bg-gray-300 
-                              px-6 
-                              h-full">
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Count
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink to="/bg-color" 
-                            className="
-                              flex items-center 
-                              justify-center
-                              text-stone-500 
-                              hover:bg-gray-300  
-                              px-6 
-                              h-full">
+                           className={({ isActive }) =>
+                            `flex items-center justify-center px-6 h-full 
+                            text-stone-500 hover:bg-gray-300 ${
+                              isActive ? "bg-gray-300 font-bold" : ""
+                            }`
+                          }>
                     BG Color
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink to="/task-list"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Task List
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink to="/timer"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Timer
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                  <NavLink to="/list-filter"
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     List Filter
                   </NavLink>
                 </li>
                 
                 <li>
-                  <NavLink to="/"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                  <NavLink to="/registration-form"
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Registration Form
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                  <NavLink to="/data-request"
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Data Request
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                  <NavLink to="/gallery"
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Gallery
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/"
-                            className="
-                            flex items-center 
-                            justify-center
-                            text-stone-500 
-                            hover:bg-gray-300  
-                            px-6 
-                            h-full">
+                  <NavLink to="/timer-two"
+                            className={({ isActive }) =>
+                              `flex items-center justify-center px-6 h-full 
+                              text-stone-500 hover:bg-gray-300 ${
+                                isActive ? "bg-gray-300 font-bold" : ""
+                              }`
+                            }>
                     Timer Two
                   </NavLink>
                 </li>
             </ul>
         </nav>
-    </>
+    </aside>
   )
 }
 
