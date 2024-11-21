@@ -4,7 +4,7 @@ import Task from "../../components/Task"
 import FormNewTask from "../../components/FormNewTask";
 import FilterTask from "../../components/FilterTask";
 
-const TaskList = () =>{
+const TaskListPage = () =>{
     const [allTasks, setAllTasks] = useState([
         {
             id:1,
@@ -51,7 +51,7 @@ const TaskList = () =>{
 
     return (
         <Layout>
-            <section className="w-full flex flex-col items-center mt-8 gap-8">
+            <section className="w-full flex flex-col items-center mt-8 gap-8 px-4">
                 <h1 className="font-bold text-4xl">Lista de Tarefas</h1>
                 <FormNewTask newTask={newTask}/>
                 <FilterTask setFilter={setFilter}/>
@@ -67,7 +67,7 @@ const TaskList = () =>{
     )
 }
 
-export default TaskList;
+export default TaskListPage;
 
 
-// TaskList é um gerenciador de tarefas em React que permite adicionar, remover, concluir e filtrar tarefas. Ele utiliza o estado para armazenar a lista de tarefas e o filtro ativo. A funcionalidade inclui: adicionar uma nova tarefa com newTask, alternar o status de conclusão com completedTask, remover uma tarefa com removeTask, e aplicar filtros (todas, completas ou incompletas) através do FilterTask. As tarefas são renderizadas dinamicamente como uma lista interativa utilizando o componente Task. O layout é gerenciado por Layout, enquanto o formulário de criação é implementado no componente FormNewTask.
+// TaskListPage é um gerenciador de tarefas em React que permite adicionar, remover, concluir e filtrar tarefas. Ele utiliza o estado para armazenar a lista de tarefas e o filtro ativo. A funcionalidade inclui: adicionar uma nova tarefa com newTask, alternar o status de conclusão com completedTask, remover uma tarefa com removeTask, e aplicar filtros (todas, completas ou incompletas) através do FilterTask. As tarefas são renderizadas dinamicamente como uma lista interativa utilizando o componente Task. O layout é gerenciado por Layout, enquanto o formulário de criação é implementado no componente FormNewTask.

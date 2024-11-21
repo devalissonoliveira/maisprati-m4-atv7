@@ -16,7 +16,7 @@ const CountPage = () => {
 
   return (
     <Layout>
-      <section className="w-full flex flex-col justify-center items-center">
+      <section className="w-full flex flex-col justify-center items-center px-4">
         <p className="text-9xl mb-6">{count}</p>
         <div className="flex gap-10">
         <button className="flex justify-center items-center w-20 bg-green-400 hover:bg-green-300 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow text-4xl" onClick={handleClickAdd}>

@@ -17,7 +17,7 @@ const BgColorPage = () =>{
 
     return (
         <Layout>
-            <section className="flex flex-col justify-center items-center w-full" style={{ backgroundColor: color }}>
+            <section className="flex flex-col justify-center items-center w-full px-4" style={{ backgroundColor: color }}>
                 <p className="text-white text-7xl mb-4">{color}</p>
                 
                 <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" onClick={handleClick}>

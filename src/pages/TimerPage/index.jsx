@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "../../layout";
 
-const Timer = () =>{
+const TimerPage = () =>{
     const [seconds, setSeconds] = useState(0);
     const [run, setRun] = useState(true)
 
@@ -19,7 +19,7 @@ const Timer = () =>{
 
     return (
         <Layout>
-            <section className="w-full flex flex-col justify-center items-center bg-orange-50">
+            <section className="w-full flex flex-col justify-center items-center bg-orange-50 px-4">
                 <p className="text-9xl mb-6">{seconds}<sub className="text-xl">s</sub></p>
                 <section className="flex gap-10">
                     <button className="flex justify-center items-center w-20 bg-red-500 hover:bg-red-400 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow" onClick={() => setRun(false)}>
@@ -35,9 +35,9 @@ const Timer = () =>{
     )
 }
 
-export default Timer;
+export default TimerPage;
 
-//Timer é uma página React que funciona como um cronômetro simples, exibindo o tempo decorrido em segundos. Ele utiliza dois estados:
+//TimerPage é uma página React que funciona como um cronômetro simples, exibindo o tempo decorrido em segundos. Ele utiliza dois estados:
 
 // seconds: mantém o número de segundos passados desde o início ou reinício do cronômetro.
 // run: controla se o cronômetro está ativo ou pausado.
