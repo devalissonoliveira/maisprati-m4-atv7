@@ -1,8 +1,8 @@
 import {createBrowserRouter} from 'react-router-dom';
 import CountPage from '../pages/CountPage';
 import BgColorPage from '../pages/BgColorPage';
-import Timer from '../pages/Timer';
-import TaskList from '../pages/TaskList'
+import TimerPage from '../pages/TimerPage';
+import TaskListPage from '../pages/TaskListPage'
 
 const router = createBrowserRouter ([
     {
@@ -14,12 +14,12 @@ const router = createBrowserRouter ([
         element: <BgColorPage/>,
     },
     {
-        path: "/timer",
-        element: <Timer/>,
+        path: "/task-list",
+        element: <TaskListPage/>,
     },
     {
-        path: "/task-list",
-        element: <TaskList/>,
+        path: "/timer",
+        element: <TimerPage/>,
     },
 ])
 
